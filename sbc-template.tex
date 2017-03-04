@@ -9,7 +9,7 @@
      
 \sloppy
 
-\title{Instructions for Authors of SBC Conferences\\ Papers and Abstracts}
+\title{Banco de dados como serviço em tempo real: Firebase}
 
 \author{Fábio da Silva Takaki\inst{1}, Lucas Martins Valladares Ribeiro\inst{1} }
 
@@ -26,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-    Com a popularização da internet em que surgiu uma sociedade digital, vários conceitos foram definidos em que destaca-se o Cloud Computing. Cloud computing é uma tecnologia em que os recursos de hardware e software, tais como aplicações especiais, CPU, armazenamento e muitos outros são fornecidos aos usuários através da Internet como um serviço e é cobrado com base no que você usa. Esses recursos tem a capacidade de escalabilidade automática de acordo com a demanda do cliente. Este artigo foca em um dos serviços que está em grande crescimento na sociedade moderna que é a área mobile em que mais de 3,2 bilhões de pessoas têm acesso a internet. Firebase é um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas em que compartilham um banco de dados que a própria ferramenta disponibiliza.
+    Com o surgimento da sociedade digital, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminiuir os custos de recursos e manutenção, do qual destaca-se o Cloud Computing. Este artigo propõe um estudo de caso de uma ferramenta que aborda um dos modelos de serviço da arquitetura Cloud Computing (IaaS, PaaS e SaaS) que é o Firebase, uma ferramenta criada pela Google. O Firebase é uma plataforma mobile que fornece diversos serviços para o rápido desenvolvimento de aplicativos móveis de alta qualidade, do qual destaca-se o serviço de banco de dados em tempo real que será o foco principal deste trabalho.
 \end{abstract}
      
 \begin{resumo} 
@@ -45,28 +45,29 @@
 %  descrição do cenário e problemas em aberto
 Com a popularização da internet em que surgiu uma sociedade digital, o volume de informações se propagou de forma abundante nos últimos anos. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção, no qual destaca-se o Cloud Computing. Cloud computing é uma tecnologia em que os recursos de hardware e software, tais como aplicações especiais, CPU, armazenamento e muitos outros são fornecidos aos usuários através da Internet como um serviço, e é cobrado com base no que você usa \cite{1}. Esses recursos têm a capacidade de escalabilidade automática de acordo com a demanda do cliente.
 \\
-Este artigo foca em um dos serviços que está em grande crescimento na sociedade moderna que é a área mobile em que mais de 3,2 bilhões de pessoas têm acesso a internet. Firebase é um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas em que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza.
+Este artigo foca em um dos serviços que está em grande crescimento na sociedade moderna que é da área mobile em que mais de 3,2 bilhões de pessoas têm acesso a internet. Firebase é um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas em que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza. 
 \\
-Este artigo está organizado da seguinte maneira: na Seção II será apresentado trabalhos correlatos; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicado; na Seção IV um estudo de caso da ferramenta firebase mostrando suas vantagens e desvantagens; por fim na Seção V resultados e trabalhos futuros.
+Este artigo está organizado da seguinte maneira: na Seção II será apresentado conceitos de Cloud Computing; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicada; na Seção IV um estudo de caso da ferramenta firebase mostrando suas vantagens e desvantagens; por fim na Seção V resultados e trabalhos futuros.
 
-\section{Trabalhos Correlatos} \label{sec:firstpage}
+\section{Cloud Computing} \label{sec:firstpage}
 
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
+O conceito de Cloud Computing é classificado em três modelos de serviço: Software as a Service (SaaS), Plataform as a Service (PaaS) e Infrastructure as a Service (IaaS). Com isso, é possível criar uma pirâmide para representar os modelos de serviço por meio de camadas de virtualização (Figura~\ref{fig:architeture}). Abaixo será descrita brevemente as caracteristicas de cada modelo de serviço para auxiliar o entendimento do que a ferramenta firebase oferece.
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.9\textwidth]{architeture.png}
+\caption{Arquitetura Cloud Computing (retirado de: \cite{2})}
+\label{fig:architeture}
+\end{figure}
 
-\section{CD-ROMs and Printed Proceedings}
+\subsection{Infrastructure as a Service}
+
+\subsection{Product as a Service}
+
+\subsection{Software as a Service}
+Esse modelo de serviço como o próprio nome diz, é um software como serviço fornecido através da internet, não necessitando de sua instalação. O fornecedor desde modelo de serviço, é responsável por controlar e limitar o uso das aplicações. Portanto, o cliente deste modelo de serviço também fica livre da necessidade de um infraestrutura do qual o fornecedor já disponibiliza.
+
+\section{Metodologia de Desenvolvimento}
 
 In some conferences, the papers are published on CD-ROM while only the
 abstract is published in the printed Proceedings. In this case, authors are
@@ -74,14 +75,14 @@ invited to prepare two final versions of the paper. One, complete, to be
 published on the CD and the other, containing only the first page, with
 abstract and ``resumo'' (for papers in Portuguese).
 
-\section{Sections and Paragraphs}
+\section{Estudo de Caso}
 
 Section titles must be in boldface, 13pt, flush left. There should be an extra
 12 pt of space before each title. Section numbering is optional. The first
 paragraph of each section should not be indented, while the first lines of
 subsequent paragraphs should be indented by 1.27 cm.
 
-\subsection{Subsections}
+\section{Conclusões e Trabalhos Futuros}
 
 The subsection titles must be in boldface, 12pt, flush left.
 
@@ -89,17 +90,10 @@ The subsection titles must be in boldface, 12pt, flush left.
 
 
 Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
+(Figure~\ref{fig:architeture}), otherwise justified and indented by 0.8cm on
 both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
 be Helvetica, 10 point, boldface, with 6 points of space before and after each
 caption.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
 
 \begin{figure}[ht]
 \centering
