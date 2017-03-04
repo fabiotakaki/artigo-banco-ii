@@ -9,7 +9,7 @@
      
 \sloppy
 
-\title{Banco de dados como serviço em tempo real: Firebase}
+\title{Banco de dados em tempo real: Firebase}
 
 \author{Fábio da Silva Takaki\inst{1}, Lucas Martins Valladares Ribeiro\inst{1} }
 
@@ -37,15 +37,19 @@
 \section{Introdução}
 
 %  descrição do cenário e problemas em aberto
-Com a popularização da internet em que surgiu uma sociedade digital, o volume de informações se propagou de forma abundante nos últimos anos. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção, no qual destaca-se o Cloud Computing. Cloud computing é uma tecnologia em que os recursos de hardware e software, tais como aplicações especiais, CPU, armazenamento e muitos outros são fornecidos aos usuários através da Internet como um serviço, e é cobrado com base no que você usa \cite{1}. Esses recursos têm a capacidade de escalabilidade automática de acordo com a demanda do cliente.
+Com a popularização da internet em que surgiu uma sociedade digital, o volume de informações se propagou de forma abundante nos últimos anos. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção. Esses recursos têm a capacidade de escalabilidade automática de acordo com a demanda do cliente.
 \\
-Este artigo foca em um dos serviços que está em grande crescimento na sociedade moderna que é da área mobile em que mais de 3,2 bilhões de pessoas têm acesso a internet. Firebase é um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas em que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza. 
+Este artigo foca em um dos serviços que está em grande crescimento na sociedade moderna que é da área mobile em que mais de 3,2 bilhões de pessoas têm acesso a internet. Firebase é um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas em que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza.
 \\
-Este artigo está organizado da seguinte maneira: na Seção II será apresentado conceitos de Cloud Computing; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicada; na Seção IV um estudo de caso da ferramenta firebase mostrando suas vantagens e desvantagens; por fim na Seção V resultados e trabalhos futuros.
+Este artigo está organizado da seguinte maneira: na Seção II será apresentado fundamentação teórica; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicada; na Seção IV um estudo de caso da ferramenta firebase mostrando suas vantagens e desvantagens; por fim na Seção V resultados e trabalhos futuros.
 
-\section{Cloud Computing} \label{sec:firstpage}
+\section{Fundamentação Teórica} \label{sec:firstpage}
 
-O conceito de Cloud Computing é classificado em três modelos de serviço: Software as a Service (SaaS), Plataform as a Service (PaaS) e Infrastructure as a Service (IaaS). Com isso, é possível criar uma pirâmide para representar os modelos de serviço por meio de camadas de virtualização (Figura~\ref{fig:architeture}). Abaixo será descrita brevemente as caracteristicas de cada modelo de serviço para auxiliar o entendimento do que a ferramenta firebase oferece.
+\subsection{Cloud Computing}
+
+Cloud computing é uma tecnologia em que os recursos de hardware e software, tais como aplicações especiais, CPU, armazenamento e muitos outros são fornecidos aos usuários através da Internet como um serviço, e é cobrado com base no que você usa \cite{1}.
+
+O conceito de Cloud Computing é classificado em três modelos de serviço: Software as a Service (SaaS), Plataform as a Service (PaaS) e Infrastructure as a Service (IaaS). Com isso, é possível criar uma representação dos modelos de serviço por meio de camadas de virtualização (Figura~\ref{fig:architeture}).
 
 \begin{figure}[ht]
 \centering
@@ -54,12 +58,19 @@ O conceito de Cloud Computing é classificado em três modelos de serviço: Soft
 \label{fig:architeture}
 \end{figure}
 
-\subsection{Infrastructure as a Service}
+\textbf{Infrastructure as a Service}
 
-\subsection{Product as a Service}
+Infraestrutura como serviço, tradução literal de Infrasctructure as a Service, compõe a base das camadas de virtualização em que é responsável por oferecer hardware como serviço, como o próprio nome diz.
 
-\subsection{Software as a Service}
-Esse modelo de serviço como o próprio nome diz, é um software como serviço fornecido através da internet, não necessitando de sua instalação. O fornecedor desde modelo de serviço, é responsável por controlar e limitar o uso das aplicações. Portanto, o cliente deste modelo de serviço também fica livre da necessidade de um infraestrutura do qual o fornecedor já disponibiliza.
+\textbf{Product as a Service}
+É proporcionar um ambiente ou plataforma apropriada na qual o
+desenvolvedor pode criar as aplicações e o software através da Internet sem necessidade de instalação ou gerenciar o ambiente de desenvolvimento \cite{1}. Seguindo a figura~\ref{fig:architeture}, um exemplo para este modelo de serviço seria a Google App Engine, na qual oferece uma plataforma de desenvolvimento para aplicações web e móvel.
+
+\textbf{Software as a Service}
+
+Esse modelo propõe um software como serviço fornecido através da internet, não necessitando de sua instalação. O fornecedor deste modelo de serviço, é responsável por controlar e limitar o uso das aplicações. Portanto, o cliente deste modelo de serviço também fica livre da necessidade de um infraestrutura do qual o fornecedor já disponibiliza.
+
+Assim, com os conceitos de Cloud Computing, o Firebase é considerado Product as a Service, por ser uma plataforma de desenvolvimento que oferece armazenamento e sincronização de dados em tempo real, utilizando apenas código client-side.
 
 \section{Metodologia de Desenvolvimento}
 
