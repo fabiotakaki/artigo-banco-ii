@@ -3,44 +3,57 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
 Database file #1: bibliografia.bib
-You've used 2 entries,
+Warning--entry type for "WA" isn't style-file defined
+--line 26 of file bibliografia.bib
+Warning--entry type for "GAE" isn't style-file defined
+--line 32 of file bibliografia.bib
+Warning--entry type for "AWS" isn't style-file defined
+--line 38 of file bibliografia.bib
+Warning--entry type for "Firebase" isn't style-file defined
+--line 44 of file bibliografia.bib
+Warning--to sort, need author or key in WA
+Warning--to sort, need author or key in GAE
+Warning--to sort, need author or key in AWS
+Warning--to sort, need author or key in Firebase
+You've used 6 entries,
             1935 wiz_defined-function locations,
-            481 strings with 4042 characters,
-and the built_in function-call counts, 956 in all, are:
-= -- 94
+            494 strings with 4168 characters,
+and the built_in function-call counts, 1720 in all, are:
+= -- 170
 > -- 36
 < -- 1
 + -- 12
 - -- 12
-* -- 76
-:= -- 158
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 16
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 41
-empty$ -- 70
+* -- 136
+:= -- 278
+add.period$ -- 14
+call.type$ -- 6
+change.case$ -- 36
+chr.to.int$ -- 6
+cite$ -- 14
+duplicate$ -- 81
+empty$ -- 142
 format.name$ -- 14
-if$ -- 197
+if$ -- 345
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 2
-newline$ -- 13
+newline$ -- 29
 num.names$ -- 6
-pop$ -- 18
+pop$ -- 38
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 36
 quote$ -- 0
-skip$ -- 32
+skip$ -- 60
 stack$ -- 0
-substring$ -- 68
+substring$ -- 120
 swap$ -- 11
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 0
+type$ -- 36
+warning$ -- 4
 while$ -- 8
 width$ -- 0
-write$ -- 28
+write$ -- 64
+(There were 8 warnings)

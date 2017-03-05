@@ -26,28 +26,26 @@
 \maketitle
 
 \begin{abstract}
-   With the emergence of the digital society, several concepts for data storage and manipulation have emerged with the purpose of reducing resource and maintenance costs, of which Cloud Computing stands out. This article proposes a case study of a tool that addresses one of the service models of the Cloud Computing (IaaS, PaaS and SaaS) architecture, which is Firebase, a tool created by Google. Firebase is a mobile platform that provides a number of services for the rapid development of high-quality mobile applications, from which stand out the real-time database service that will be the focus of this work.
+   With the emergence of the digital society and the Internet of Things, several concepts for data storage and manipulation have emerged with the purpose of reducing resource and maintenance costs of which Cloud Computing stands out. This article proposes a case study of a tool that addresses one of the service models of the Cloud Computing (IaaS, PaaS and SaaS) architecture, which is Firebase, a tool created by Google. Firebase is a mobile platform that provides a number of services for the rapid development of high-quality mobile applications, from which stand out the real-time database service that will be the focus of this work.
 \end{abstract}
      
 \begin{resumo} 
-   Com o surgimento da sociedade digital, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminiuir os custos de recursos e manutenção, do qual destaca-se o Cloud Computing. Este artigo propõe um estudo de caso de uma ferramenta que aborda um dos modelos de serviço da arquitetura Cloud Computing (IaaS, PaaS e SaaS) que é o Firebase, uma ferramenta criada pela Google. O Firebase é uma plataforma mobile que fornece diversos serviços para o rápido desenvolvimento de aplicativos móveis de alta qualidade, do qual destaca-se o serviço de banco de dados em tempo real que será o foco principal deste trabalho.
+   Com o surgimento da sociedade digital e a Internet das Coisas, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminiuir os custos de recursos e manutenção do qual destaca-se o Cloud Computing. Este artigo propõe um estudo de caso de uma ferramenta que aborda um dos modelos de serviço da arquitetura Cloud Computing (IaaS, PaaS e SaaS) que é o Firebase, uma ferramenta criada pela Google. O Firebase é uma plataforma mobile que fornece diversos serviços para o rápido desenvolvimento de aplicativos móveis de alta qualidade, do qual destaca-se o serviço de banco de dados em tempo real que será o foco principal deste trabalho.
 \end{resumo}
 
 
 \section{Introdução}
 
 %  descrição do cenário e problemas em aberto
-Com a popularização da internet em que surgiu uma sociedade digital, o volume de informações se propagou de forma abundante nos últimos anos. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção. Esses recursos têm a capacidade de escalabilidade automática de acordo com a demanda do cliente.
+Com a popularização da internet em que surgiu uma sociedade digital, o volume de informações se propagou de forma abundante nos últimos anos, principalmente com o avanço das tecnologias móveis. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção. Nesse sentido surgiram diversos serviços para suprir a escalabilidade de recursos como \cite{WA} \cite{GAE} \cite{AWS} entre outros serviços que seguem conceitos de Cloud Computing que serão abordados mais a frente neste artigo. No entanto, até então não haviam serviços que são voltados para o desenvolvimento móvel ou web no qual oferece um armazenamento e sincronização de dados em tempo real, que são recursos que são essenciais para aplicativos como chat ou redes sociais atualmente. Assim, este artigo apresenta um estudo de caso do Firebase, que tem por finalidade fornecer um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza. Como consequência, possibilita os desenvolvedores criarem aplicativos de alta qualidade de forma rápida e fácil, sem a necessidade de se preocupar com infraestrutura e escalabilidade de recursos.
 \\
-Este artigo foca em um dos serviços que está em grande crescimento na sociedade moderna que é da área mobile em que mais de 3,2 bilhões de pessoas têm acesso a internet. Firebase é um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas em que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza.
-\\
-Este artigo está organizado da seguinte maneira: na Seção II será apresentado fundamentação teórica; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicada; na Seção IV um estudo de caso da ferramenta firebase mostrando suas vantagens e desvantagens; por fim na Seção V resultados e trabalhos futuros.
+Este artigo está organizado da seguinte maneira: na Seção II será apresentado uma fundamentação teórica; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicada; na Seção IV um estudo de caso da ferramenta firebase mostrando suas vantagens e desvantagens; por fim na Seção V resultados e trabalhos futuros.
 
 \section{Fundamentação Teórica} \label{sec:firstpage}
 
 \subsection{Cloud Computing}
 
-Cloud computing é uma tecnologia em que os recursos de hardware e software, tais como aplicações especiais, CPU, armazenamento e muitos outros são fornecidos aos usuários através da Internet como um serviço, e é cobrado com base no que você usa \cite{1}.
+Cloud computing é uma tecnologia em que os recursos de hardware e software, tais como aplicações especiais, CPU, armazenamento e muitos outros são fornecidos aos usuários através da Internet como um serviço, e é cobrado com base no que você usa \cite{1}. Esses recursos têm a capacidade de escalabilidade automática de acordo com a demanda do cliente.
 
 O conceito de Cloud Computing é classificado em três modelos de serviço: Software as a Service (SaaS), Plataform as a Service (PaaS) e Infrastructure as a Service (IaaS). Com isso, é possível criar uma representação dos modelos de serviço por meio de camadas de virtualização (Figura~\ref{fig:architeture}).
 
@@ -72,13 +70,9 @@ Esse modelo propõe um software como serviço fornecido através da internet, n�
 
 Assim, com os conceitos de Cloud Computing, o Firebase é considerado Product as a Service, por ser uma plataforma de desenvolvimento que oferece armazenamento e sincronização de dados em tempo real, utilizando apenas código client-side.
 
-\section{Metodologia de Desenvolvimento}
+\section{Metodologia de Apoio ao Firebase}
 
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
+O Firebase Realtime Database é um banco de dados hospedado em nuvem. Os dados são armazenados como JSON e sincronizados em tempo real para cada cliente conectado. Ao criar aplicativos multiplataforma com nossos SDKs para iOS, Android e JavaScript, todos os seus clientes compartilham uma instância do Realtime Database e recebem automaticamente atualizações com os dados mais recentes. \cite{Firebase}
 
 \section{Estudo de Caso}
 

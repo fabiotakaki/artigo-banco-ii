@@ -1,5 +1,21 @@
 \begin{thebibliography}{}
 
+\bibitem[AWS 2017]{AWS}
+ (2017).
+\newblock Amazon web services.
+
+\bibitem[Fir 2017]{Firebase}
+ (2017).
+\newblock Documentation firebase real-time database.
+
+\bibitem[GAE 2017]{GAE}
+ (2017).
+\newblock Google app engine.
+
+\bibitem[WA 2017]{WA}
+ (2017).
+\newblock Windows azure.
+
 \bibitem[Bokhari et~al. 2016]{1}
 Bokhari, M.~U., Shallal, Q.~M., and Tamandani, Y.~K. (2016).
 \newblock Cloud computing service models: A comparative study.
