@@ -1,20 +1,10 @@
 \begin{thebibliography}{}
 
-\bibitem[AWS 2017]{AWS}
- (2017).
-\newblock Amazon web services.
-
-\bibitem[Fir 2017]{Firebase}
- (2017).
-\newblock Documentation firebase real-time database.
-
-\bibitem[GAE 2017]{GAE}
- (2017).
-\newblock Google app engine.
-
-\bibitem[WA 2017]{WA}
- (2017).
+\bibitem[Azure 2017]{WA}
+Azure, W. (2017).
 \newblock Windows azure.
+\newblock \url{http://www.microsoft.com/azure/}.
+\newblock [Online; acessado 05-Março-2017].
 
 \bibitem[Bokhari et~al. 2016]{1}
 Bokhari, M.~U., Shallal, Q.~M., and Tamandani, Y.~K. (2016).
@@ -25,6 +15,34 @@ Bokhari, M.~U., Shallal, Q.~M., and Tamandani, Y.~K. (2016).
 \bibitem[Cleveroad 2016]{3}
 Cleveroad (2016).
 \newblock A story of firebase or your next favourite cloud-based service.
+\newblock
+  \url{https://www.cleveroad.com/blog/a-story-of-firebase-or-your-next-favourite-cloud-based-service}.
+\newblock [Online; acessado 05-Março-2017].
+
+\bibitem[Engine 2017]{GAE}
+Engine, G.~A. (2017).
+\newblock Google app engine.
+\newblock \url{https://appengine.google.com/}.
+\newblock [Online; acessado 05-Março-2017].
+
+\bibitem[Google 2017]{Firebase}
+Google, F. (2017).
+\newblock Documentation firebase real-time database.
+\newblock \url{https://firebase.google.com/docs/database/}.
+\newblock [Online; acessado 05-Março-2017].
+
+\bibitem[Oracle 2017]{socket}
+Oracle (2017).
+\newblock What is socket ?
+\newblock
+  \url{https://docs.oracle.com/javase/tutorial/networking/sockets/definition.html}.
+\newblock [Online; acessado 05-Março-2017].
+
+\bibitem[Services 2017]{AWS}
+Services, A.~W. (2017).
+\newblock Amazon web services.
+\newblock \url{https://aws.amazon.com/}.
+\newblock [Online; acessado 05-Março-2017].
 
 \bibitem[Zhang et~al. 2010]{2}
 Zhang, Q., Cheng, L., and Boutaba, R. (2010).

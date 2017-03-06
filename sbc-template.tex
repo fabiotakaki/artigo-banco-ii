@@ -26,20 +26,20 @@
 \maketitle
 
 \begin{abstract}
-   With the emergence of the digital society and the Internet of Things, several concepts for data storage and manipulation have emerged with the purpose of reducing resource and maintenance costs of which Cloud Computing stands out. This article proposes a case study of a tool that addresses one of the service models of the Cloud Computing (IaaS, PaaS and SaaS) architecture, which is Firebase, a tool created by Google. Firebase is a mobile platform that provides a number of services for the rapid development of high-quality mobile applications, from which stand out the real-time database service that will be the focus of this work.
+   With the emergence of the digital society and the Internet of Things, several concepts for data storage and manipulation have emerged with the purpose of reducing resource and maintenance costs of which Cloud Computing stands out. This article proposes a case study of a tool that addresses one of the service models of the Cloud Computing (IaaS, PaaS and SaaS) architecture, which is Firebase, a tool created by Google. Firebase is a mobile platform that provides a number of services for the rapid development of high-quality web and mobile applications, from which stand out the real-time database service that will be the focus of this work.
 \end{abstract}
      
 \begin{resumo} 
-   Com o surgimento da sociedade digital e a Internet das Coisas, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminiuir os custos de recursos e manutenção do qual destaca-se o Cloud Computing. Este artigo propõe um estudo de caso de uma ferramenta que aborda um dos modelos de serviço da arquitetura Cloud Computing (IaaS, PaaS e SaaS) que é o Firebase, uma ferramenta criada pela Google. O Firebase é uma plataforma mobile que fornece diversos serviços para o rápido desenvolvimento de aplicativos móveis de alta qualidade, do qual destaca-se o serviço de banco de dados em tempo real que será o foco principal deste trabalho.
+   Com o surgimento da sociedade digital e a Internet das Coisas, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminiuir os custos de recursos e manutenção do qual destaca-se o Cloud Computing. Este artigo propõe um estudo de caso de uma ferramenta que aborda um dos modelos de serviço da arquitetura Cloud Computing (IaaS, PaaS e SaaS) que é o Firebase, uma ferramenta criada pela Google. O Firebase é uma plataforma mobile que fornece diversos serviços para o rápido desenvolvimento de aplicativos web e móveis de alta qualidade, do qual destaca-se o serviço de banco de dados em tempo real que será o foco principal deste trabalho.
 \end{resumo}
 
 
 \section{Introdução}
 
 %  descrição do cenário e problemas em aberto
-A popularização da internet gerou uma sociedade digital, o que antigamente era local, tornou-se online. O volume de informações se propagou de forma abundante nos últimos anos, principalmente com o avanço das tecnologias móveis. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção. Assim, surgiram diversos serviços para suprir a escalabilidade de recursos, como: \cite{WA} \cite{GAE} \cite{AWS}, que seguem conceitos de um modelo novo de armazenamento e manipulação de dados, o Cloud Computing. Até então, não existiam serviços que supriam as necessidades essenciais de serviços voltados para aplicativos atuais (chats e redes sociais), que demandam desenvolvimento móvel/web com armazenamento e sincronização de dados em tempo real. Este artigo apresenta um estudo de caso do Firebase, que tem por finalidade fornecer um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza, do qual será o foco principal deste trabalho. Como consequência, a ferramenta possibilita os desenvolvedores criarem aplicativos de alta qualidade de forma rápida e fácil, sem a necessidade de se preocupar com infraestrutura e escalabilidade de recursos.
+A popularização da internet gerou uma sociedade digital, o que antigamente era local, tornou-se online. O volume de informações se propagou de forma abundante nos últimos anos, principalmente, com o avanço das tecnologias móveis. Em decorrência disso, diversos conceitos para armazenamento e manipulação dos dados surgiram com a finalidade de diminuir os custos de recursos e manutenção. Com efeito, originaram-se recursos como \cite{WA} \cite{GAE} \cite{AWS}, os quais seguem conceitos de um modelo novo, o Cloud Computing. Até então, não existiam serviços que supriam as necessidades essenciais de serviços voltados para aplicativos atuais (chats e redes sociais), que demandam desenvolvimento móvel/web com armazenamento e sincronização de dados em tempo real. O presente artigo descreve um estudo de caso do Firebase, que tem por finalidade fornecer um serviço de dados em nuvem em tempo real, utilizado para criação de aplicativos multiplataformas que compartilham um banco de dados não relacional que a própria ferramenta disponibiliza, do qual será o foco principal deste trabalho. Como consequência, a ferramenta possibilita aos desenvolvedores criarem aplicativos de alta qualidade de forma rápida e fácil, sem a necessidade de se preocupar com infraestrutura e escalabilidade de recursos.
 \\
-Este artigo está organizado da seguinte maneira: na Seção II será apresentado uma fundamentação teórica; na Seção III será apresentado a metodologia de desenvolvimento aqui aplicada; na Seção IV um estudo de caso da ferramenta firebase em que é realizado um estudo do desenvolvimento de uma aplicação; por fim na Seção V resultados e trabalhos futuros.
+Este artigo está organizado da seguinte maneira: na Seção II será apresentado uma fundamentação teórica sobre Cloud Computing, em que é essencial para o entendimento do Firebase; na Seção III será apresentado a metodologia de apoio; na Seção IV um estudo de caso da ferramenta firebase em que é realizado um estudo do desenvolvimento de uma aplicação; por fim na Seção V, resultados e trabalhos futuros.
 
 \section{Cloud Computing} \label{sec:firstpage}
 
@@ -61,11 +61,11 @@ Ao invés de manter hacks, servidores e roteadores, o usuário contrata sevidore
 
 \textbf{Platform as a Service}
 
-Plataforma como serviço, tradução literal, é o serviço entre Infrastructure as a Service e Software as a Service. É proporcionar um ambiente ou plataforma apropriada na qual o desenvolvedor pode criar as aplicações e o software através da Internet sem necessidade de instalação ou gerenciar o ambiente de desenvolvimento \cite{1}. O serviço trás ao usuário um ambiente flexível e adequado que suporta as tecnologias que deseja, como frameworks ou linguagens de programação. Como observado na figura~\ref{fig:architeture}, temos o modelo de serviço Google App Engine, o qual oferece uma plataforma de desenvolvimento para aplicações web e móvel.
+Plataforma como serviço, tradução literal, é o serviço entre Infrastructure as a Service e Software as a Service. É proporcionar um ambiente ou plataforma apropriada na qual o desenvolvedor pode criar as aplicações e o software através da Internet sem necessidade de instalação ou gerenciar o ambiente de desenvolvimento \cite{1}. O serviço fornece ao usuário um ambiente flexível e adequado que suporta as tecnologias que deseja, como frameworks ou linguagens de programação. Como observado na figura~\ref{fig:architeture}, temos o modelo de serviço Google App Engine, o qual oferece uma plataforma de desenvolvimento para aplicações web e móvel.
 
 \textbf{Software as a Service}
 
-Entrando na última camada de serviços, observamos o Software as a Service. Esse modelo propõe um software como serviço fornecido através da internet, não necessitando de sua instalação. O fornecedor deste modelo de serviço, é responsável por controlar e limitar o uso das aplicações. Portanto, o cliente deste modelo de serviço também fica livre da necessidade de uma infraestrutura, já disponibilizada pelo fornecedor.
+Entrando na última camada de serviços, observamos o Software as a Service. Esse modelo propõe um software como serviço fornecido através da internet, não necessitando de sua instalação. O fornecedor deste modelo de serviço é responsável por controlar e limitar o uso das aplicações. Portanto, o cliente deste modelo de serviço também fica livre da necessidade de uma infraestrutura, já disponibilizada pelo fornecedor.
 
 Assim, com os conceitos de Cloud Computing, o Firebase é considerado Platform as a Service, por ser uma plataforma de desenvolvimento que oferece armazenamento e sincronização de dados em tempo real, utilizando apenas código client-side. 
 
@@ -73,7 +73,11 @@ Assim, com os conceitos de Cloud Computing, o Firebase é considerado Platform a
 
 Firebase foi criado em 2011 por Andrew Lee and James Tamplin porém foi lançado oficialmente em 2012. Originalmente o sistema tinha o intuito de fornecer um banco de dados em tempo real fornecendo uma API aos usuários para armazenar e sincronizar dados através de diferentes clientes \cite{3}. Assim, a metodologia do Firebase mudou um pouco após a aquisição da Google. Dois anos depois de sua release, surgiu diversos serviços que complementam a ideia do banco de dados em tempo real, voltados para aplicativos móveis ou web: Firebase Auth, Firebase Storage, Firebase Cloud Messaging, Firebase Remote Config, Firebase Test Lab for Android e Firebase Crash Reporting. Dentre todos os serviços citados nesta seção, este trabalho foca no objetivo inicial do Firebase que é o real-time database.
 
-\textbf{Firebase Realtime Database}
+\subsection{Acesso e criação de projetos}
+
+O acesso à todos os serviços (citados na Seção \ref{sec:metodologia}) do Firebase, é preciso apenas de uma conta Google, que pode ser criada gratuitamente. Concedido o acesso ao console do Firebase, facilmente você cria um projeto apenas especificando o nome do projeto, e assim é liberado o acesso à todos os serviços. Assim, para o uso da API, necessita apenas do desenvolvedor configurar a aplicação web ou mobile desejada com as keys da API do Firebase que é fornecida logo após a criação de um projeto, carregando a biblioteca firebase.
+
+\subsection{Firebase Realtime Database}
 
 O Firebase Realtime Database é um banco de dados hospedado em nuvem. Os dados são armazenados como JSON e sincronizados em tempo real para cada cliente conectado. Ao criar aplicativos multiplataforma com nossos SDKs para iOS, Android e JavaScript, todos os seus clientes compartilham uma instância do Realtime Database e recebem automaticamente atualizações com os dados mais recentes \cite{Firebase}. Portanto, o objetivo do Firebase Realtime Database é fornecer um banco de dados em tempo real, em que o cliente é conectado diretamente e só  é preciso enviar os dados através de uma API.
 
@@ -101,30 +105,51 @@ A estrutura em que as regras são definidas também são armazenadas em JSON que
   \item \textbf{.indexOn} - Especifica uma criança a indexar para suportar pedidos e consultas.
 \end{enumerate}
 
-O Firebase Realtime Database é pré-configurado com o Firebase Auth, que é responsável por realizar a segurança do app quando sua natureza são dados restritos aos usuários autenticados. Como o intuito deste trabalho é realizar um estudo de caso do serviço de banco de dados em tempo real, não será utilizado para o estudo de caso o Firebase Auth. Portanto, nossa estrutura JSON de permissões trataremos como aberta para a realização do estudo de caso sem a necessidade do Firebase Auth.
+O Firebase Realtime Database é pré-configurado com o Firebase Auth, que é responsável por realizar a segurança do app quando sua natureza são dados restritos aos usuários autenticados. Como o intuito deste trabalho é realizar um estudo de caso do serviço de banco de dados em tempo real, foi configurado as permissões de leitura e gravação como público, não necessitando de autenticação para efetuar ambas operações.
 
+\textbf{API do Firebase}
 
+A API do Firebase é manipulada através de bibliotecas desenvolvidas pela Google em que é facilmente carregada em projetos Android, iOS ou Web. Assim, o Firebase conta com uma variedade de métodos em sua biblioteca para a realização de qualquer tipo de operação direta com o banco de dados, com a sua principal característica que são operações em tempo real. 
+
+\subsection{Implementação de um chat com Firebase}
+
+Para a realização do estudo de caso para o Firebase, foi implementado uma aplicação chat, que são aplicações muito comuns hoje em dia e necessitam de uma sincronização e armazenamento em tempo real. Nesse sentido, foi criado um projeto novo no Firebase utilizando a biblioteca Javascript voltado para aplicações web e mobile (híbridas) realizando as operações CRUD de um chat público. Com isso,  demonstraremos como seria a mesma aplicação implementada com bancos de dados tradicionais relacionais ou não relacionais.
+
+\textbf{Enviando Mensagens (CREATE)}
+
+O envio de mensagens com o Firebase pode ser realizado através do método \textbf{.push(objeto)} da biblioteca do Firebase, em que o objeto com as informações são passadas como parâmetro. No caso do chat utilizamos uma estrutura bastante simples do qual o objeto JSON tem apenas o nome do usuário que está enviando a mensagem e a mensagem em si. Em bancos de dados tradicionais, é preciso instalar o banco de dados e utilizar de uma linguagem \textit{backend} para conexão com o banco de dados para a inserção dos dados no banco. Se caso for um banco de dados relacional, é preciso definir a estrutura da mensagem em uma tabela com os campos de nome de usuário e a mensagem.
+
+\textbf{Recebendo Mensagens (READ)}
+
+Com o propósito do Firebase de realizar o banco de dados em tempo real, o recebimento das mensagens de uma aplicação em chat fica extremamente simples. Com o método \textbf{.on(evento, callback)}, a aplicação interage através de eventos passados parâmetro. Assim, com o evento \textit{child\_added} é disparado quando algum novo objeto da referência que está estanciada é adicionado no banco de dados. Então, a função callback é chamada, em que é passada no segundo parâmetro do método \textbf{.on()}, tem seu parâmetro que tem um valor do objeto JSON adicionado. Então, é através dessa função de callback, é possível atualizar a lista de mensagens com a nova mensagem adicionada no banco à todos os usuários que estiverem com a aplicação de chat aberta. A implementação com bancos de dados tradicionais nessa parte do chat, é preciso implementar um socket entre todos os usuários que estão conectados na aplicação, que após a inserção de mensagens no banco, os usuários conectados receberiam o aviso através do socket e adicionaria a mensagem na lista de mensagens. Um Socket é um ponto final de um link de comunicação bidirecional entre dois programas em execução na rede \cite{socket}.
+
+\textbf{Editando Mensagens (UPDATE)}
+
+A edição de mensagens com o Firebase é implementado com o mesmo propósito do recebimento de mensagens, do qual utilizaremos do método \textbf{.on()}, porém com o evento \textit{child\_changed}, do qual o \textit{callback} só é disparado quando uma mensagem for alterada em algum momento da aplicação. Além disso, para alterar mensagem, é utilizado a função \textbf{.update(objeto)} do qual é chamado com a referência ao nó na árvore JSON que a atualização é desejada, passando como parâmetro o objeto JSON com os campos desejados e seus novos valores. Então é realizado a atualização no banco de dados Firebase. Em bancos de dados tradicionais a edição além da implementação do \textit{socket} para verificar alteração de qualquer mensagem no banco, é implementado também na linguagem \textit{backend} escolhida para realizar a operação \textit{update} para atualização do banco de dados.
+
+\textbf{Deletando Mensagens (DELETE)}
+
+A função delete com o Firebase, é também implementado com o mesmo propósito do recebimento de mensagens, do qual utilizaremos o método \textbf{.on()}, porém com o evento \textit{child\_removed}, do qual o \textit{callback} só é disparado quando uma mensagem for deletada em algum momento da aplicação. Para a remoção de qualquer nó no banco de dados Firebase, é preciso apenas chamar o método \textbf{.remove()} em um objeto referenciado na biblioteca Firebase. Em bancos de dados tradicionais, além da implementação do \textit{socket} para verificar a remoção de qualquer mensagem no banco, é implementado também na linguagem \textit{backend} escolhida para realizar a operação \textit{delete}.
 
 \section{Estudo de Caso}
 
-Nesta seção é realizado um estudo de caso com os conceitos da ferramenta até então apresentada, no qual é analisado as funcionalidades e facilidades com a ferramenta Firebase real time database para a criação de um chat público em tempo real.
+Nesta seção é realizado um estudo de caso com os conceitos da ferramenta até então apresentada, no qual é analisado as funcionalidades e facilidades com a ferramenta Firebase real time database para a criação de um chat público em tempo real trazendo uma analogia com banco de dados tradicionais relacionais e não relacionais.
 
-\textbf{Acesso e criação de projetos}
+A grande questão é que se utilizassemos um banco de dados tradicional, seja ele relacional ou não relacional, é que para a criação de um chat, seria necessário a utilização de tecnologias como Socket's para a implementação da sincronização de dados ao ter alguma alteração nas operações de banco de dados, o que trás um certo atraso. Portanto, o chat com esses bancos tradicionais, preocuparia o desenvolvedor lidar com a sincronização das mensagens e que podem ser perdidas caso a conexão caia. Além disso, o desenvolvedor teria que se preocupar com a instalação dos bancos de dados para a manipulação e armazenamento das mensagens, do qual irá utilizar dos recursos do servidor onde a aplicação estaria hospedada. Seguindo a linha de raciocínio com os bancos de dados tradicionais, com a preocupação e dificuldade da sincronização dos dados, se o desenvolvedor não souber realizar a implementação correta, pode acontecer do socket mandar uma mensagem avisando todos os usuários que foi deletado ou alterado alguma mensagem sendo que no banco de dados ocorreu alguma falha durante a operação, tornando a aplicação inconsistente.
 
-O acesso à todos os serviços (citados na Seção \ref{sec:metodologia}) do Firebase, é preciso apenas de uma conta Google, que pode ser criada gratuitamente. Concedido o acesso ao console do Firebase, facilmente você cria um projeto apenas especificando o nome do projeto, e assim é liberado o acesso à todos os serviços do Firebase, necessitando apenas do desenvolvedor configurar a aplicação web ou mobile desejada com as keys da API do Firebase.
+Um outro caso relevante que deve ser explicitado, pelo Firebase ser uma multiplataforma de desenvolvimento, facilmente os desenvolvedores conseguem adicionar novas plataformas compartilhando um mesmo banco de dados. No caso do chat, como foi exemplificado com a biblioteca Javascript web, se houvesse uma necessidade de ter uma aplicação Android, facilmente seria implementada com a biblioteca desenvolvida em Java para a manipulação do banco de dados Firebase. Em bancos de dados tradicionais, isso seria trabalhoso, pois haveria a necessidade de implementar não só o socket novamente em uma nova plataforma, como também o desenvolvimento de uma API para o acesso em multiplataformas no mesmo banco de dados.
+
+Em termos de desempenho, o Firebase além de ser uma ferramenta em Cloud Computing permitindo escalabilidade, conta com um modelo não relacional, que foi escolhido justamente por ter diferentes otimizações e funcionalidades comparados aos bancos de dados relacionais. Com isso, possibilita rápida atualização à todos os dispositivos conectados ao banco de dados. Em aplicações com bancos de dados tradicionais, é preciso contar com uma forma de adquirir recursos para o servidor caso a demanda exigir. Além disso, depende do \textit{uptime} do servidor em que se encontra o banco de dados para que todos os dispositivos conectados ao chat funcione. Com o Firebase quem se preocupa com a infraestrutura é a própria empresa Google, dona do Firebase.
+
 
 \section{Conclusões e Trabalhos Futuros}
-
 % as vantages do firebase e que a pesquisa pode ser expandida com os serviços de autenticação, storage
-jsxjiosjoijsocj
+Mediante as necessidade e dificuldades de se garantir o armazenamento e manipulação dos dados em diferentes plataformas, este trabalho propôs a análise de uma ferramenta para a criação de aplicações multiplataformas que compartilham um banco de dados em tempo real, que tem por objetivo facilitar o desenvolvimento de aplicações de alta qualidade em diversos dispositivos. Dentre os desafios encontrados, destaca-se a dificuldade de implementação de uma aplicação multiplataforma com a dependência da sincronização de dados em tempo real de forma rápida. Assim, foi realizado um estudo de caso comparando a ferramenta Firebase com os bancos de dados tradicionais com uma aplicação muito comum nos dias de hoje que seria um chat. 
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+O Firebase apresentou-se uma boa alternativa para soluções em tempo real quando comparado aos bancos de dados tradicionais, sendo mais rápido e simples. Também foi constatado a facilidade do uso em termos de manipulação de dados quanto a implementação da aplicação em diferentes plataformas. Adicionalmente, a ferramenta se destaca pela preocupação com a segurança dos dados que são configuradas facilmente e podem ser alteradas a qualquer momento.
+
+Os trabalhos futuros devem se concentrar na análise com as outras soluções disponíveis que complementam o banco de dados em tempo real do Firebase. Assim, permite um aprofundamento do estudo sobre o armazenamento dos dados como o Firebase Storage que permite o armazenamento de arquivos, como também o Firebase Authentication que trata da autenticação e segurança dos dados quando a natureza do aplicativo exige dados pessoais. Além disso, pode-se expandir o estudo para os outros serviços disponíveis no Firebase que são voltados para aplicativos móveis que podem facilitar a implementação, como Firebase Notifications, Firebase Invites, Firebase Cloud Messaging, entre outros.
+
 
 \bibliographystyle{sbc}
 \bibliography{bibliografia}
